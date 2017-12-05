@@ -2,6 +2,6 @@
 
 # Considere US$1,00 = R$3,27
 
-n1 = float(input('Quanto você tem de dinheiro ? '))
+n1 = float(input('Quanto você tem de dinheiro ? R$  '))
 
-print('Você pode comprar {} dólares'.format(n1*3.27))
+print('Você pode comprar {:.2f} dólares'.format(n1/3.27))
