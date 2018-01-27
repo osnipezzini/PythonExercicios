@@ -9,7 +9,7 @@ parcela = int(input('Em quantas vezes quer pagar ? '))
 #perce = salario
 presta = valor / parcela
 
-if ((salario * 30) / 100) < parcela:
+if ((salario * 30) / 100) <= parcela:
     print('\033[31m'+'Empréstimo negado')
 else:
     print('O valor da prestação mensal é de {:.2f}'.format(presta))

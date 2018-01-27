@@ -7,10 +7,10 @@ A Confederação Nacional de Natação precisa de um programa que leia o ano de 
 - Até 20 anos : Senior
 - Acima : Master
 '''
-
+from datetime import date
 ano = int(input('Qual o seu ano de nascimento: '))
-
-idade = 2018 - ano
+atual = date.today().year
+idade = atual - ano
 
 if idade <= 9:
     print('Você tem {} e sua classificação atual é Mirim'.format(idade))

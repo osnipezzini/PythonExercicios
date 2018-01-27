@@ -11,15 +11,15 @@ Desenvolva uma lógica que leia o peso e a altura de uma pessoa , calcule seu IM
 peso = float(input('Qual seu peso ? '))
 altura = float(input('Qual sua altura ? '))
 
-imc = (peso / altura) * altura
-
+imc = peso / (altura ** 2)
+print('Seu IMC é {:.1f}'.format(imc))
 if imc < 18.5:
-    print('Seu IMC é {} e você está abaixo do peso '.format(imc))
-elif imc < 18.5 > 25:
-    print('Seu IMC é {} e seu peso é ideal'.format(imc))
-elif imc < 25 > 30:
-    print('Seu IMC é {} e você tem sobrepeso'.format(imc))
-elif imc < 30 > 40:
-    print('Seu IMC é {} e você está obeso'.format(imc))
+    print('Você está abaixo do peso ')
+elif 18.5 <= imc < 25:
+    print('Seu peso é ideal')
+elif 25 <= imc < 30:
+    print('Você tem sobrepeso')
+elif 30 <= imc < 40:
+    print('Você está obeso')
 else:
-    print('Seu IMC é {} e você tem obesidade mórbida'.format(imc))
+    print('Obesidade mórbida')
